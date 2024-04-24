@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+
+    <!-- tailwind, bootstrap  -- css frameworks -->
+
+    <!-- css cascading, inheritance and specificity  -->
+  </head>
+  <body>
+    <h1>Application Form</h1>
+    <form action="https://api.eldohub.co.ke" method="GET">
+      <div>
+        <label for="fullname">Enter your full name</label>
+        <input type="text" name="fullname" id="fullname" />
+      </div>
+      <div>
+        <label class="dr" for="year"
+          >Which year did you intend to join us?</label
+        >
+        <input type="number" name="year" id="year" min="2024" max="2030" />
+      </div>
+
+      <div>
+        <label for="course">Which Course ?</label>
+        <select name="course" id="course">
+          <option value="">Select a course</option>
+          <option value="web">Full-stack Web Programming</option>
+          <option value="graphic">Graphics Design</option>
+          <option value="mobile">Mobile Applications Development</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label> <br />
+        <input type="radio" name="gender" id="male" value="M" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="F" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="null" value="N" />
+        <label for="null">Prefer not to say</label>
+      </div>
+
+      <div>
+        <label for="source">How did you hear about us?</label> <br />
+        <input type="checkbox" name="source" id="social" value="social" />
+        <label for="social">Social Media</label> <br />
+        <input type="checkbox" name="source" id="friend" value="friends" />
+        <label for="friend">Friend/Family referal</label>
+        <br />
+        <input type="checkbox" name="source" id="other" value="other" />
+        <label for="other">Other Platforms(church,events,radio,e.t.c)</label>
+      </div>
+
+      <div>
+        <label for="passport">Passport Photo</label>
+        <input type="file" name="passport" id="passport" />
+      </div>
+
+      <div>
+        <input type="submit" value="Complete Application" />
+        <!-- button of type submit can also be used. -->
+        <!-- <button type="submit">complete application</button>  -->
+      </div>
+      <div>
+        <input type="reset" value="Clear Form" />
+      </div>
+      <!-- emmet abbreviation -->
+    </form>
+  </body>
+</html>
